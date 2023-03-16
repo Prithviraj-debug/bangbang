@@ -15,7 +15,7 @@ export default function Keyhits() {
         audio.currentTime = 0
         audio.play()
 
-        const key = document.querySelector(`kbd[data-key="${e.keyCode}"]`)
+        // const key = document.querySelector(`kbd[data-key="${e.keyCode}"]`)
 
         // key.classList.add('playing')
     }
@@ -23,7 +23,7 @@ export default function Keyhits() {
     function removeTransition(e) {
         //transitionend is triggered on a variety of properties, (border, box shadow, etc)
         // just select one - in this case 'transform'
-        if (e.propertyName != 'transform') return;
+        if (e.propertyName !== 'transform') return;
         e.target.classList.remove('playing')
     }
 
@@ -38,6 +38,7 @@ export default function Keyhits() {
                 const currKey = document.querySelector(`#${key}`)
                 currKey.classList.add("press")
             }
+            return;
         })
     }
 
@@ -48,6 +49,7 @@ export default function Keyhits() {
                 const currKey = document.querySelector(`#${key}`)
                 currKey.classList.remove("press")
             }
+            return;
         })
     }
 
