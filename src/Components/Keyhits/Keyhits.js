@@ -38,8 +38,8 @@ export default function Keyhits() {
                 const currKey = document.querySelector(`#${key}`)
                 currKey.classList.add("press")
             }
+            return 0;
         })
-        return 0;
     }
 
     const upHandler = ({ key }) => {
@@ -49,8 +49,8 @@ export default function Keyhits() {
                 const currKey = document.querySelector(`#${key}`)
                 currKey.classList.remove("press")
             }
+            return 0;
         })
-        return 0;
     }
 
     useEffect(() => {
