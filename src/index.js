@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDom from "react-dom";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Comments from "./Components/Comments/Comments";
-import GithubUsers from "./Components/Github/GithubUsers";
+// import { BrowserRouter, Route, Routes } from "react-router-dom";
+// import Comments from "./Components/Comments/Comments";
+// import GithubUsers from "./Components/Github/GithubUsers";
 import Keyhits from "./Components/Keyhits/Keyhits";
 
 const App = () => {
